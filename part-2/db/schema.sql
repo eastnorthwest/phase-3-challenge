@@ -18,8 +18,9 @@ CREATE TABLE items (
   section VARCHAR(16) NOT NULL
 );
 
-CREATE TABLE orderItemPrice (
+CREATE TABLE orderItemQtyPrice (
   order_id INT NOT NULL ,
   item_id INT NOT NULL ,
+  qty INT NOT NULL ,
   price FLOAT(2) NOT NULL
 );

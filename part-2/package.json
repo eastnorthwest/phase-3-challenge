@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "create-database": "createdb grocery_store",
     "reset-database": "dropdb grocery_store && createdb grocery_store",
     "schema": "psql -d grocery_store -f db/schema.sql",
     "import": "psql -d grocery_store -c 'COPY items(name, price, section) FROM STDIN CSV HEADER' < './data/grocery.csv'",
+    "dummy-data": "psql -d grocery_store -f db/dummy-data.sql",
     "start": "nodemon index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pg-promise": "^5.9.3"
+  }
 }
