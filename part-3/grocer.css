@@ -132,7 +132,7 @@ body {
 }
 
 #modalWindow {
-  width: 500px;
+  width: 300px;
   padding: 20px;
   position: relative;
   margin: 20% auto;
@@ -179,4 +179,18 @@ body {
   line-height: 25px;
   font-size: 20px;
   margin-top: 5px;
+  text-align: right;
+}
+
+.cart-line-item {
+  margin-top: 5px;
+}
+
+.cart-line-item-title {
+  width: 50%;
+}
+
+.cart-line-item-price {
+  text-align: right;
+  width: 50%;
 }
